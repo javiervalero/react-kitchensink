@@ -5,14 +5,15 @@ export default () => ({
 
 	context: path.resolve(__dirname, 'src'),
 
-	entry: './js/app.jsx',
+  devtool: 'cheap-module-source-map',
+
+	entry: './js/app.js',
 
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].jsx'
+		filename: '[name].js'
 	},
 
-  devtool: 'inline-source-map',
 
   plugins: [
     new HtmlWebpackPlugin({
