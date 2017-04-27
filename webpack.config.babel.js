@@ -5,9 +5,9 @@ export default () => ({
 
 	context: path.resolve(__dirname, 'src'),
 
-  devtool: 'cheap-module-source-map',
+  devtool: 'cheap-module-eval-source-map',
 
-	entry: './js/app.js',
+	entry: './features/todoList/index.js',
 
 	output: {
 		path: path.resolve(__dirname, 'dist'),
