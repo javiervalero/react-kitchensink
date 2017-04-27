@@ -3,16 +3,16 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default () => ({
 
-	context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, 'src'),
 
   devtool: 'cheap-module-eval-source-map',
 
-	entry: './features/todoList/index.js',
+  entry: './features/todoList/index.js',
 
-	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].js'
-	},
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js'
+  },
 
 
   plugins: [
@@ -21,11 +21,11 @@ export default () => ({
     })
   ],
 
-	module: {
-		rules: [
-			{
-				test: /\.jsx?$/,
-				use: [
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        use: [
           {
             loader: 'babel-loader',
             options: {
@@ -33,7 +33,7 @@ export default () => ({
             }
           }
         ]
-			},
+      },
       {
         test: /\.(css|scss|sass)$/,
         use: [
@@ -48,7 +48,7 @@ export default () => ({
           'sass-loader'
         ]
       }
-		]
-	}
+    ]
+  }
 
 });
