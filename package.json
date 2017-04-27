@@ -4,7 +4,7 @@
   "description": "React Redux tests",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.babel.js",
+    "build": "webpack --config webpack.config.babel.js --display-error-details --progress",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +29,7 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "prop-types": "^15.5.8",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^1.3.1",

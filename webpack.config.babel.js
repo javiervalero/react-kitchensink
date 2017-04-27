@@ -10,8 +10,8 @@ export default () => ({
   entry: './features/todoList/index.js',
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    path: path.resolve(__dirname, 'bin'),
+    filename: 'app.bundle.js'
   },
 
 
