@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './styles.scss';
 
-export default class Menu extends Component {
-  render() {
-    return (
-      <div className={styles.testtt + ' Menu'}>
-        Main Menu
-      </div>
-    );
-  }
-}
+const Menu = () => (
+  <div className={`${styles.testtt} Menu`}>
+    Main Menu
+  </div>
+);
+
+export default Menu;
