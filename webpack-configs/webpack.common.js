@@ -11,13 +11,23 @@ const config = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: [
+          'babel-loader',
+          'eslint-loader',
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
       },
     ],
   },
-  resolve: {
-    extensions: ['*', '.js', '.jsx'],
-  },
+  // resolve: {
+  //   extensions: ['*', '.js', '.jsx'],
+  // },
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
     publicPath: '/',
@@ -28,6 +38,7 @@ const config = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Hello Webpack bundled JavaScript Project',
+      filename: 'index.html',
       template: './src/index.html',
     }),
   ],

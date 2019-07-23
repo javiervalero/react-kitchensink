@@ -19,8 +19,11 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react",
+    "emotion"
   ],
   "rules": {
+    "emotion/styled-import": "error",
+    "emotion/syntax-preference": ["error", "object"]
   }
 }
