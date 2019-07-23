@@ -5,14 +5,12 @@
     "node": true
   },
   "extends": [
-    "airbnb",
-    "plugin:jsx-a11y/strict"
+    "airbnb"
   ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -21,19 +19,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "babel",
-    "react",
-    "html"
+    "react"
   ],
   "rules": {
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
-    "babel/new-cap": 1,
-    "babel/camelcase": 1,
-    "babel/no-invalid-this": 1,
-    "babel/object-curly-spacing": 0,
-    "babel/quotes": 0,
-    "babel/semi": 1,
-    "babel/no-unused-expressions": 1,
-    "babel/valid-typeof": 1
   }
 }
